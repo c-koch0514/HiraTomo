@@ -1,0 +1,296 @@
+@charset "UTF-8";
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.topic {
+  text-align: center;
+}
+
+.topic .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 3.6rem;
+  color: #333333;
+  padding: 8rem 0 3.3rem 0;
+}
+
+.topic .read {
+  margin-top: 3.3rem;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+}
+
+.topic hr {
+  margin: 0 auto;
+  width: 3.5rem;
+}
+
+.back-gry {
+  background-color: #ededed;
+  z-index: -10;
+}
+
+header {
+  height: 6.4rem;
+  color: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+header .nav {
+  position: relative;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav h1 {
+  font-size: 3.6rem;
+}
+
+header .nav .humbergar-menu {
+  width: 6.4rem;
+  height: 6.4rem;
+  cursor: pointer;
+}
+
+header .nav .humbergar-menu .humbergar-menu-line,
+header .nav .humbergar-menu .humbergar-menu-line::after,
+header .nav .humbergar-menu .humbergar-menu-line::before {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #fff;
+}
+
+header .nav .humbergar-menu .humbergar-menu-line::before,
+header .nav .humbergar-menu .humbergar-menu-line::after {
+  content: "";
+}
+
+header .nav .humbergar-menu .humbergar-menu-line {
+  top: 50%;
+}
+
+header .nav .humbergar-menu .humbergar-menu-line::before {
+  top: calc(50% - 10px);
+}
+
+header .nav .humbergar-menu .humbergar-menu-line::after {
+  top: calc(50% + 8px);
+}
+
+.header-title {
+  color: #ffffff;
+  background-image: url("../images/header.png");
+  background-size: cover;
+  background-position: center center;
+  height: 62rem;
+  text-align: center;
+}
+
+.header-title h1 {
+  display: inline-block;
+  margin-top: 24rem;
+  font-size: 12rem;
+  line-height: 1.4;
+}
+
+.header-title p {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 1.6rem;
+}
+
+.concept {
+  text-align: center;
+  position: relative;
+}
+
+.concept img {
+  height: 40rem;
+}
+
+.concept .back-gry {
+  position: absolute;
+  top: 56rem;
+  width: 100%;
+  padding-bottom: 24rem;
+}
+
+.work .work-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.work .work-box .work-contents {
+  width: 42rem;
+}
+
+.work .work-box .work-contents .work-content img {
+  margin-bottom: 1.6rem;
+}
+
+.work .work-box .work-contents .work-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #333333;
+}
+
+.work .work-box .work-contents .work-content p {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.7rem;
+}
+
+.work .work-box .work-contents .work-content:nth-child(2) {
+  margin-top: 8rem;
+}
+
+.work .work-box .work-contents:nth-child(2) {
+  padding-top: 12rem;
+}
+
+.florist {
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.florist .florists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.florist .florists .people {
+  width: 30rem;
+}
+
+.florist .florists .people h1 {
+  margin-top: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #333333;
+}
+
+.florist .florists .people p {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.6rem;
+}
+
+.florist .back-gry {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-bottom: 37.4rem;
+}
+
+.shop-info {
+  padding-bottom: 12rem;
+}
+
+.shop-info .info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop-info .info-box .infos {
+  width: 43.2rem;
+  height: 32rem;
+  padding: 3.2rem 0 0 4rem;
+}
+
+.shop-info .info-box .infos .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.shop-info .info-box .infos .info p:nth-child(1) {
+  width: 8rem;
+}
+
+.shop-info .info-box .infos .info .info-detail {
+  padding-left: 1.6rem;
+  border-left: 1px solid #707070;
+}
+
+.contact {
+  height: 45rem;
+  background-image: url("../images/contact_us.png");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+
+.contact .contact-btn {
+  width: 36rem;
+  height: 8rem;
+  background-color: #ffffff;
+  border: 1px solid #a0a0a0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-btn i {
+  font-size: 4rem;
+  color: #707070;
+}
+
+.contact .contact-btn p {
+  font-size: 2rem;
+  margin-left: 2.4rem;
+}
+
+footer {
+  height: 3rem;
+}
+
+footer p {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

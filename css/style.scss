@@ -1,0 +1,273 @@
+@mixin myri {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  line-height: 1.8;
+}
+@mixin poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #333333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.topic {
+  text-align: center;
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 3.6rem;
+    color: #333333;
+    padding: 8rem 0 3.3rem 0;
+  }
+  .read {
+    margin-top: 3.3rem;
+    margin-bottom: 4rem;
+    @include myri;
+  }
+  hr {
+    margin: 0 auto;
+    width: 3.5rem;
+  }
+}
+.back-gry {
+  background-color: #ededed;
+  z-index: -10;
+}
+
+// header
+header {
+  height: 6.4rem;
+  //   background-color: rgba(#000000, 0.3);
+  color: #ffffff;
+  width: 100%;
+  //   margin-top: 4rem;
+  position: fixed;
+  z-index: 10;
+
+  .nav {
+    position: relative;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 3.6rem;
+    }
+    .humbergar-menu {
+      width: 6.4rem;
+      height: 6.4rem;
+      cursor: pointer;
+
+      .humbergar-menu-line,
+      .humbergar-menu-line::after,
+      .humbergar-menu-line::before {
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 2px;
+        background: #fff;
+      }
+
+      .humbergar-menu-line::before,
+      .humbergar-menu-line::after {
+        content: "";
+      }
+
+      .humbergar-menu-line {
+        top: 50%;
+      }
+
+      .humbergar-menu-line::before {
+        top: calc(50% - 10px);
+      }
+
+      .humbergar-menu-line::after {
+        top: calc(50% + 8px);
+      }
+    }
+  }
+}
+// end header
+
+// main
+// header-title
+.header-title {
+  color: #ffffff;
+  background-image: url("../images/header.png");
+  background-size: cover;
+  background-position: center center;
+  //   background-color: rgba(#000, 0.3);
+  //   background-blend-mode: darken;
+  height: 62rem;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    margin-top: 24rem;
+    font-size: 12rem;
+    line-height: 1.4;
+  }
+  p {
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+    font-size: 1.6rem;
+  }
+}
+// end header-title
+
+// concept
+.concept {
+  text-align: center;
+  position: relative;
+  img {
+    height: 40rem;
+  }
+  .back-gry {
+    position: absolute;
+    top: 56rem;
+    width: 100%;
+    padding-bottom: 24rem;
+  }
+}
+// end concept
+
+// work
+.work {
+  .work-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+
+    .work-contents {
+      width: 42rem;
+      .work-content {
+        img {
+          margin-bottom: 1.6rem;
+        }
+        h1 {
+          @include poppins;
+        }
+        p {
+          @include myri;
+          font-size: 1.7rem;
+        }
+      }
+      .work-content:nth-child(2) {
+        margin-top: 8rem;
+      }
+    }
+    .work-contents:nth-child(2) {
+      padding-top: 12rem;
+    }
+  }
+}
+// end work
+
+// florist
+.florist {
+  padding-bottom: 4rem;
+  position: relative;
+
+  .florists {
+    display: flex;
+    justify-content: space-between;
+
+    .people {
+      width: 30rem;
+      h1 {
+        margin-top: 1.2rem;
+        @include poppins;
+      }
+      p {
+        @include myri;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .back-gry {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: 37.4rem;
+  }
+}
+// end florist
+
+// shop-info
+.shop-info {
+  padding-bottom: 12rem;
+  .info-box {
+    display: flex;
+    justify-content: space-between;
+
+    .infos {
+      width: 43.2rem;
+      height: 32rem;
+      //   border: 1px dashed #707070;
+      padding: 3.2rem 0 0 4rem;
+
+      .info {
+        display: flex;
+        @include myri;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+
+        p:nth-child(1) {
+          width: 8rem;
+        }
+        .info-detail {
+          padding-left: 1.6rem;
+          border-left: 1px solid #707070;
+        }
+      }
+    }
+  }
+}
+// end shop-info
+
+// contact
+.contact {
+  height: 45rem;
+  background-image: url("../images/contact_us.png");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+
+  .contact-btn {
+    width: 36rem;
+    height: 8rem;
+    background-color: #ffffff;
+    border: 1px solid #a0a0a0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 4rem;
+      color: #707070;
+    }
+    p {
+      font-size: 2rem;
+      margin-left: 2.4rem;
+    }
+  }
+}
+// end contact
+
+// footer
+footer {
+  height: 3rem;
+  p {
+    @include myri;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
+// end footer
+
+@media (max-width: 67rem) {
+}

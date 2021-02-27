@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 960px;
+  font-family: myriad-pro, "Myriad Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+
+/* デフォルトのボールド指定を解除 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
